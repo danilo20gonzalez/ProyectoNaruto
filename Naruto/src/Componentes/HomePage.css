@@ -1,0 +1,96 @@
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding: 1rem;
+  background-image: url('https://img3.wallspic.com/crops/2/0/1/1/7/171102/171102-anime-arte-akatsuki-naruto_shippuden-sasuke_uchiha-1920x1080.jpg'); /* Reemplaza con la URL de tu imagen */
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  border: 2px solid transparent; 
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 0 20px 5px rgba(58, 123, 253, 0.5); 
+  border: 2px solid #3a7bfd;
+}
+
+.card:hover {
+  border: 2px solid #3a7bfd; 
+  box-shadow: 
+    0 0 15px #3a7bfd,    
+    0 0 30px #3a7bfd,    
+    0 0 45px #3a7bfd;    
+}
+
+.card img {
+  width: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.3rem 0;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #1976d2;
+  margin-top: 0.5rem;
+}
+
+.icon-button {
+  margin-left: auto;
+}
+
+.heart-icon {
+  transition: all 0.3s ease;
+  color: #f50057;
+}
+
+.favorite-icon:hover .heart-icon {
+  animation: heart-pulse 0.3s ease-in-out;
+  color: #ff1744;
+}
+
+@keyframes heart-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

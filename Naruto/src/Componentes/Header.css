@@ -1,0 +1,54 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #2a9d8f; 
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image {
+    width: 60px; 
+    height: auto;
+    border-radius: 50%; 
+}
+
+.header-text {
+    margin-top: 0.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.header-button-left {
+    margin-right: auto; 
+}
+
+.header-button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    margin-left: auto;
+}
+
+.header-button:hover {
+    transform: scale(1.1);
+    color: #ffd700;
+}
